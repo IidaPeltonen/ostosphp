@@ -6,7 +6,6 @@ $input = json_decode(file_get_contents('php://input'));
 $description = filter_var($input->description,FILTER_SANITIZE_STRING);
 $amount = filter_var($input->amount,FILTER_SANITIZE_NUMBER_INT);
 
-
 try {
     $db = openDB();
     
